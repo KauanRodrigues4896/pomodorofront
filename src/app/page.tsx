@@ -1,7 +1,12 @@
 "use client"
 
+import { LoginContainer, LoginButton } from "@/styles/app/loginPage";
+
 export default function Home() {
   return (
-    <div>Pomodoro</div>
+    <LoginContainer>
+      <LoginButton href="/tasks">Login com o Google</LoginButton>
+    </LoginContainer>
   );
 }
+
