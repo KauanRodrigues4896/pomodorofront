@@ -1,14 +1,14 @@
 "use client"
 
-import { TasksContainer, FormContainer, TableContainer, TableHead, TableBody, Itens } from "@/styles/app/tasksPage";
+import { SaveButton } from "@/components/Buttons/Save";
+import { TasksForm } from "@/components/Forms/Tasks";
+import { TasksContainer, TableContainer, TableHead, TableBody, Itens } from "@/styles/app/tasksPage";
 import Link from "next/link";
 
 export default function Tasks() {
   return (
     <TasksContainer>
-        <FormContainer>
-            <input type="text"/> <button>Criar</button>
-        </FormContainer>
+       <TasksForm />
         <TableContainer>
             <TableHead>
                 <span id="tasks">Atividades</span>
@@ -19,12 +19,12 @@ export default function Tasks() {
                 <Itens status={true}>
                     <span>Lavar Louça</span>
                     <span id="status"/>
-                    <span><Link href="/edit">Editar</Link> | <Link href="/delete">Deletar</Link> | <Link href="/start">Iniciar</Link></span>
+                    <span><Link href="/update">Editar</Link> | <Link href="/delete">Deletar</Link> | <Link href="/times">Iniciar</Link></span>
                 </Itens>
                 <Itens status={false}>
                     <span>Lavar Louça</span>
                     <span id="status" />
-                    <span><Link href="/edit">Editar</Link> | <Link href="/delete">Deletar</Link> | <Link href="/start">Iniciar</Link></span>
+                    <span><Link href="/update">Editar</Link> | <Link href="/delete">Deletar</Link> | <Link href="/times">Iniciar</Link></span>
                 </Itens>
             </TableBody>
         </TableContainer>

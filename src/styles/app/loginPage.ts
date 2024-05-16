@@ -15,4 +15,5 @@ export const LoginButton = styled(Link)`
     display: flex;
     justify-content: center;
     align-items: center;
+    border: radius 6px;
 `

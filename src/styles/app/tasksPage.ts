@@ -10,29 +10,7 @@ export const TasksContainer = styled.div `
     flex-direction: column;
     gap: 0.8rem;
 `
-export const FormContainer = styled.form`
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.8rem;
 
-    input {
-        width: 40rem;
-        height: 3rem;
-        border: none;
-        background-color: buttonface;
-        border-radius: 6px;
-        padding-left: 4px;
-    }
-
-    button {
-        height: 3rem;
-        width: 7rem;
-        border: none;
-        border-radius: 6px;
-    }
-`
 
 export const TableContainer = styled.div`
     width: 100%;
@@ -47,11 +25,13 @@ export const TableHead = styled.div`
     width: 47.8rem;
     height: 4rem;
     display:flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
+    gap: 10rem;
     background-color: #1e90ff;
     color: #fff;
     border-radius: 6px;
+    padding: 0 1rem;
 `
 
 export const TableBody = styled.div`
