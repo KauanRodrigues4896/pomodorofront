@@ -8,3 +8,14 @@ export const TimesContainer = styled.div`
     flex-direction: column;
     gap: 0.8rem;
 `
+export const Timer = styled.div`
+display: flex;
+justify-content: center;
+align-items: center;
+span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6rem;
+    flex-direction: row;}
+`
